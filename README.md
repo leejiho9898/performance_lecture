@@ -21,3 +21,8 @@
 - webpack에서는 따로 설정을 해야한다. (https://webpack.js.org/guides/code-splitting/)
 - lazy,Suspense를 적용하고 다시 cra bundle analyzer를 실행하면 필요한 부분만 분리되서 적용되는걸 확인 가능하다.
  
+#### 4. 텍스트 압축
+- cra에서 기본적으로 텍스트 압축을 해준다. pakege.json의 script에서 -u 옵션을 추가해주면 텍스트 압축을 끌 수 있다.
+- 텍스트 압축이 마냥 좋지만은 않다. 압축 -> 압축해제에 시간이 걸리기 때문
+- 개발자 도구의 network 탭에서 용량을 확인했을 때 2kb 이상의 파일들은 압축을 하는게 더 좋다.
+- 확인해보면 168kb -> 48kb로 약 1/5정도로 용량이 줄은걸 확인했다.
