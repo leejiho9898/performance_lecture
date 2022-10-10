@@ -34,7 +34,12 @@
 ### 요약
 
 #### 1. 애니메이션 최적화
-- ```width: ${({width}) => width}%;``` 이런식의 동적인 width값을 주는것 보다는
+- ```width: ${({width}) => width}%;``` 이런식의 동적인 width값을 주는것 보다는 (width, heigh, top 등등은 reflow가 발생한다.)
 - ```transform: scaleX(${({ width }) => width / 100});``` 이런식으로 transform을 활용하면 reflow, repaint를 피할 수 있다.
 - 또한 gpu의 도움을 약간아니마 받기때문에 성능에도 도움이 된다. 이러한 이유들로 애니매이션의 프레임을 일정하게 유지하여 버벅임을 피할 수 있다.
+
+
+#### 2. 컴포넌트 lazy loading
+- 1강에서 배웠던 내용과 동일하기에 pass
+
 
