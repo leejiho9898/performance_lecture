@@ -42,4 +42,6 @@
 #### 2. 컴포넌트 lazy loading
 - 1강에서 배웠던 내용과 동일하기에 pass
 
+#### 3. 컴포넌트 preloading
+- 어떠한 모달이나 새 컴포넌트를 띄울때 ```const component = import("./components/ImageModal");``` 이러한 함수를 onMouseEnter 에 넣게되면 버튼을 누르기 전에 컴포넌트가 로딩되기 때문에 버튼을 눌렀을때 빠르게 뜨며 사용자 경험이 좋아진다. 컴포넌트가 너무 커 1초로 부족하다면 Page가 didmount 되었을 때 로드 하는 방법도 있다. 
 
